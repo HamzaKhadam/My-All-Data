@@ -1,0 +1,39 @@
+add_shortcode('our-shortcode', 'shortcodeCode');
+function shortcodeCode(){
+    
+$postitle = array (
+        'post_type' => 'post'
+    );
+$test = "";
+    $alltitles = new WP_Query($postitle);
+
+    while($alltitles->have_posts()) {
+        $alltitles->the_post();
+
+
+     $test .="<div class='main'>
+
+           <div class='short-title'>
+                <a href='".get_the_permalink()."'>".get_the_title()."</a>
+
+                <div class='post-date'>
+                    ".get_the_date()." <span>By</span>
+                    ".get_the_author()."
+                </div>
+
+            
+
+            <div class='short-content'>
+                
+                <div class='short-text'>
+                ".get_the_excerpt()." <a class='readmore'  href=".get_the_permalink().">[Read More...]</a>
+                </div>
+</div>
+
+            </div>
+
+          </div>";
+    }
+wp_reset_query();
+return $test;
+}

@@ -1,0 +1,6 @@
+/* Enqueue OWL CAROUSEL */
+add_action( 'wp_enqueue_scripts', 'agencyclix_add_owlcarousel' );
+function agencyclix_add_owlcarousel() {
+     wp_enqueue_style( 'owl-carousel-css', get_stylesheet_directory_uri() .'/owl-min.css', array(), CHILD_THEME_VERSION );
+     wp_enqueue_script( 'owl-carousel-js', get_stylesheet_directory_uri() .'/owl-min.js', array( 'jquery' ), false, true );
+}

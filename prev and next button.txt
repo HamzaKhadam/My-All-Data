@@ -1,0 +1,17 @@
+<nav id="nav-single-condition">
+	<?php
+	$prev_post = get_previous_post(); 
+	$id = $prev_post->ID ;
+	$permalink = get_permalink( $id );
+	?>
+	<?php 
+	$next_post = get_next_post();
+	$nid = $next_post->ID ;
+	$permalink = get_permalink($nid);
+	?>
+	<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav"> < </span> Previous', 'twentyeleven' ) ); ?> </span>
+	<span class="pag-pr-title"> Condition </span>
+	<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav"> > </span>', 'twentyeleven' ) ); ?>
+
+	</span>
+</nav>

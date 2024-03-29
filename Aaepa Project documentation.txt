@@ -1,0 +1,97 @@
+Theme
+Theme: Genesis
+Child theme: MAI Theme Law (Stivers Law Firm)
+Theme Setting
+Site Title: Stivers Law Firm
+Tagline: Miami Florida Estate Planning Law Firm
+Administration Email Address: help@allmarketingsolutions.co.uk
+Root directory:
+You can see this folder contains the following structure:
+themes/
+├── genesis/
+└── stiverslaw/
+This stiverslaw contains all the files. You should use these files for changes or updates.
+
+Assets directory
+You can see this folder contains the following structure:
+stiverslaw
+├── style.css
+├── functions.php
+├── owl-min.css
+├── js
+│   ├── custom.js
+├── owl-min.js
+├── 404.php
+├── EP-article.php /* EP-Articles Archive Page Template */
+├── Elder-Law-archive.php /* Elder Reports Archive Page Template */
+├── archive-reports.php /* Reports Archive Page Template */
+├── archive-reports.php /* Staff Archive Page Template */
+├── archive-staff_profile.php /* Staff Archive Page Template */
+├── archive-testimonial.php /* Testimonial Archive Page Template */
+├── educational-archive.php /* Educational Archive Page Template */
+├── landing-page.php /* Landing Page Template */
+├── news_and_events_archive.php /* News and events Archive Page Template */
+├── newsletter-archive.php /* Newsletters Archive Page Template */
+├── single-newsletter.php /* Single newsletter Template */
+├── single-staff_profile.php /* Single Staff Profile Template */
+├── taxonomy-testi_categories.php /* Testimonials Categories Template */
+
+Technologies
+WordPress Gutenberg > Page Builder 
+Cross-browser > Cross-browser compatibility when you save the file at local.
+Gravity Forms for Forms.
+Typography
+Global settings, headings, body text, lists, and inputs.
+font-family: 'Open Sans', sans-serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Poppins';
+H1 > font-size: 39px
+H2 > font-size: 32px
+H3 > font-size: 28px
+H4 > font-size: 22px
+H5 > font-size: 22px
+H6 > font-size: 22px
+P > font-size: 18px;
+Functions / Features:
+Right Sidebar (Ready to use)
+
+Widgets
+Before Header > For Header Number and Social Icon
+Primary Sidebar >
+Download our free estate planning worksheet
+Blog SUBSCRIBE Form
+Follow Us
+Where We Are
+Business Hours 
+Footer 1  > 
+Office Location
+ Footer 2 > 
+Office Location
+ Footer 2 >
+Sign Up for Our Newsletter
+Custom Post Types 
+Newsletters
+Elder Law Reports
+Educational Alerts
+Estate Planning Articles 
+News And Events
+Reports
+Staff Profiles
+FAQs
+Forms Notifications 
+justin@probatefirm.com  For all pages.
+Change author on all pages and posts to Member
+Done
+QA
+Done
+Pixel Perfect:
+Done generally
+Responsive Layout:
+Done generally
+Speed Optimization:
+Not Done Yet We be done on the live server.
+W3C Markup Validation
+Done No Error All pages checked and fixed
+SEO
+SEO Frog Report Done
+Regard

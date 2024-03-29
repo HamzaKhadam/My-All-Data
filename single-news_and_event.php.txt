@@ -1,0 +1,30 @@
+<?php
+/* Remove post meta
+------------------------------------------------------------ */
+ 
+remove_action( 'genesis_after_post_content', 'genesis_post_meta' );
+
+add_action( 'genesis_before_entry', 'cd_news_single' );
+function cd_news_single() { ?>
+<div class="staff-title">
+	<!-- Display post title -->
+  <?php echo the_title('', $echo) . "\n"; ?> </div>
+<span class="entry-date"><?php echo get_the_date(); ?></span> <br />
+	<div class="staff-content">
+	<!-- Display featured image in left-aligned floating div -->
+	  <div style="float: left; margin: 25px 20px 10px 10px">
+                    <?php the_post_thumbnail( ); ?>
+                </div></div>
+<?php }
+/* Remove post Title
+------------------------------------------------------------ */
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+//* Remove the entry meta in the entry header (requires HTML5 theme support)
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+
+
+/* Let Genesis do its magic
+------------------------------------------------------------ */
+
+genesis();
